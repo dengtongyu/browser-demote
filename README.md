@@ -1,6 +1,6 @@
 ## 浏览器版本过低
 
-![example](/res/example.png) 
+![example](https://github.com/dengtongyu/browser-demote/raw/master/res/example.png) 
 
 ##### 安装
 ```sh
