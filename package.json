@@ -1,0 +1,17 @@
+{
+  "name": "browser-demote",
+  "version": "1.0.1",
+  "description": "",
+  "keywords": [
+    "browser",
+    "demote"
+  ],
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dengtongyu",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {}
+}
