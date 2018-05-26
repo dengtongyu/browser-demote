@@ -34,3 +34,11 @@ demote.use({refuse:'border-radius'});
 //判断多个样式
 demote.use({refuse:['box-sizing', 'border-radius']}); 
 ```
+
+###### 获取弹出状态
+```js
+var demote = require('browser-demote');
+
+//true 为弹出状态
+demote.status.isShow
+```

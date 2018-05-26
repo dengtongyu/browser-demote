@@ -151,7 +151,9 @@ var show = function() {
 	document.getElementsByTagName('body')[0].appendChild(alertNode);
 
 	continueBtn = document.getElementById('visit-btn');
-	addEventHandler(continueBtn, 'click', continueFunction)
+	addEventHandler(continueBtn, 'click', continueFunction);
+
+	isShow = true;
 }
 
 var hide = function() {
@@ -159,6 +161,8 @@ var hide = function() {
 	document.getElementsByTagName('body')[0].removeChild(alertNode);
 	document.getElementsByTagName('head')[0].removeChild(styleNode);
 	alertNode = styleNode = continueBtn = null;
+
+	isShow = false;
 }
 
 var status = function() {
