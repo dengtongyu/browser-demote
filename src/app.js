@@ -5,13 +5,6 @@
  * @version $Id$
  */
 
-/**
- * 
- * @authors Tony.Deng (dengtongyu123@163.com)
- * @date    2018-05-23 09:56:40
- * @version $Id$
- */
-
 var tpl = function(obj) {
 	var html = '<div class="pop_box">' +
 		'<div class="pop_main">' +
@@ -40,6 +33,8 @@ var config = {
 }
 
 var ua = navigator.userAgent.toLowerCase();
+
+var isShow = false;
 
 var alertNode = null,
 	styleNode = null,
@@ -124,7 +119,7 @@ var continueFunction = function(event) {
 var use = function(options) {
 	config = extend(config, options);
 
-	var isShow = false;
+	isShow = false;
 
 	if (config.refuse && isString(config.refuse)) {
 		isShow = isShow || (!cssSupports(config.refuse));
@@ -144,6 +139,7 @@ var use = function(options) {
 	if (isShow) {
 		show();
 	}
+	
 }
 
 
@@ -165,6 +161,13 @@ var hide = function() {
 	alertNode = styleNode = continueBtn = null;
 }
 
+var status = function() {
+	return {
+		isShow: isShow
+	}
+}
+
 exports.use = use;
 exports.show = show;
 exports.hide = hide;
+exports.status = status;
