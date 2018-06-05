@@ -40,5 +40,5 @@ demote.use({refuse:['box-sizing', 'border-radius']});
 var demote = require('browser-demote');
 
 //true 为弹出状态
-demote.status.isShow
+demote.status().isShow
 ```
